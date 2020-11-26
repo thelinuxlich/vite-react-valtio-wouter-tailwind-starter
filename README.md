@@ -1,6 +1,6 @@
 # Vite + React + Valtio + Wouter + Tailwind CSS starter
 
-Inspired by [posva's](https://github.com/posva) [vite-tailwind-starter](https://github.com/posva/vite-tailwind-starter)
+Inspired by [posva's](https://github.com/posva) [vite-tailwind-starter](https://github.com/posva/vite-tailwind-starter) and [wobsoriano's fork](https://github.com/wobsoriano/vite-react-tailwind-starter)
 
 Note if you have access to [Tailwind UI](https://tailwindui.com), you can follow the following steps to add it:
 

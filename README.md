@@ -1,4 +1,4 @@
-# Vite + React + Tailwind CSS starter
+# Vite + React + Valtio + Wouter + Tailwind CSS starter
 
 Inspired by [posva's](https://github.com/posva) [vite-tailwind-starter](https://github.com/posva/vite-tailwind-starter)
 
@@ -17,7 +17,7 @@ yarn add @tailwindcss/ui
 module.exports = {
   // ...
   // rest of the config
-  plugins: [require('@tailwindcss/ui')],
+  plugins: [require('@tailwindcss/ui')]
 }
 ```
 

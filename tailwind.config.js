@@ -1,23 +1,19 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: {
     enabled: process.env.NODE_ENV === 'production',
     safeList: [],
-    content: [
-      './index.html',
-      './src/**/*.vue',
-      './src/**/*.js',
-    ],
+    content: ['./index.html', './src/**/*.vue', './src/**/*.js']
   },
   theme: {
     extend: {
       fontWeight: ['hover', 'focus'],
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-      },
-    },
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans]
+      }
+    }
   },
   variants: {},
-  plugins: []
-};
+  plugins: [require('@tailwindcss/forms')]
+}

@@ -1,29 +1,27 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-import Nav from './components/Nav';
-
-import Home from './views/Home';
-import About from './views/About';
-import NotFound from './views/NotFound';
+import React from 'react'
+import { Route, Switch, useLocation } from 'wouter'
+import Auth from './views/Auth'
+import Home from './views/Home'
+import NotFound from './views/NotFound'
 
 const App = () => {
+  const [location, setLocation] = useLocation()
+  setLocation('/auth')
   return (
-    <Router>
-      <Nav />
+    <div>
       <Switch>
-        <Route exact path="/">
+        <Route path='/'>
           <Home />
         </Route>
-        <Route path="/about">
-          <About />
+        <Route path='/auth'>
+          <Auth />
         </Route>
         <Route>
           <NotFound />
         </Route>
       </Switch>
-    </Router>
-  );
-};
+    </div>
+  )
+}
 
-export default App;
+export default App
